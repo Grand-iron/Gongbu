@@ -9,5 +9,5 @@ int main (void){
         printf(">");
     else
         printf("==");
-    return 0;
+    return 0; 
 }

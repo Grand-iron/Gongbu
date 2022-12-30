@@ -7,6 +7,6 @@ int main (void){
     while (b<10){
         printf("%d * %d = %d\n",a,b,b*a); 
         b+=1;
-    }
+    } 
     return 0;           
 }
