@@ -16,8 +16,6 @@ dis=math.sqrt(((p_a-y_a)*(p_a-y_a))+((p_b-y_b)*(p_b-y_b)))
 if dis<5:
     print(0)
 else:
-    print(y_b,y_a)
-    print(p_b,p_a)
     if p_b<=y_b:
         ga=p_b
         garo=y_b
@@ -30,13 +28,10 @@ else:
     if y_b<=p_b:
         ga=y_b
         garo=p_b
-    print(ga,se)
-    for x in range(ga,garo):
-        for y in range(se, sero):
-            print("가로",x,"세로",y)
+    for x in range(ga,garo+1):
+        for y in range(se, sero+1):
             if t[y][x]=='1':
                 count+=1
-                print("카운트",count)
     if count<3:
         print(0)
     else:
