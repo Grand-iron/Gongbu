@@ -15,4 +15,4 @@ for x in reversed(a):
         z=x
         count2+=1
 print(count)
-print(count2)
+print(count2) 
