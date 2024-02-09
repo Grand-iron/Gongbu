@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pymysql
 
 # sql 연결 부분
-conn = pymysql.connect(host='220.67.115.32',port=11102, user='stdt013', password='rodzldwha82', db='stdt013', charset='utf8',connect_timeout=100000)
+conn = pymysql.connect(host='220.67.115.32',port=11102, user='stdt013', password='', db='stdt013', charset='utf8',connect_timeout=100000)
 cur=conn.cursor()
 cur.execute("CREATE TABLE `stdt013`.`경찰청분실물자료1` (`No` VARCHAR(45) NOT NULL,\
             `lstplace` VARCHAR(45) NULL,\
