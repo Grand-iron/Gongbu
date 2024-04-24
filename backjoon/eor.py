@@ -1,48 +1,30 @@
-def solution(park, routes):
-    가로=0
-    세로=0
-    공원가로=len(park[0])-1
-    공원세로=len(park)-1
-    for x in park:
-        가로=0
+def solution(wallpaper):
+    countx1=99
+    county1=99
+    countx2=-1
+    county2=-1
+    county=0
+    countx=0
+    for x in wallpaper: 
+        countx=0
+        if "#" in x and county1==99:
+            county1=county
+            print("county1=",county1)
+        if "#" in x and county>=county2:
+            county2=county
+            print("county2=",county2)
         for y in x:
-            if y=="S":
-                위치=[세로,가로]
-                break
-            else:
-                가로+=1
-        세로+=1
-    for x in routes:
-        count=0
-        for y in range(int(x[2])):
-            if x[0]=="E":
-                if 위치[1]+y+1<=공원가로:
-                    if park[위치[0]][위치[1]+y+1]!="X":
-                        count+=1
-            elif x[0]=="N":
-                if 위치[0]+(y*(-1))-1>=0:
-                    if park[위치[0]+y*(-1)-1][위치[1]]!="X":
-                        count+=1
-            elif x[0]=="W":
-                if 위치[1]+(y*(-1))-1>=0:
-                    if park[위치[0]][위치[1]+y*(-1)-1]!= "X":
-                        count+=1
-            elif x[0]=="S":
-                if 위치[0]+y+1<=공원세로:
-                    print(위치[0])
-                    if park[위치[0]+y+1][위치[1]]!="X":
-                        count+=1
-        
-        if count==int(x[2]):
-            print(위치)
-            if x[0]=="E":
-                위치[1]+=int(x[2])
-            elif x[0]=="N":
-                위치[0]-=int(x[2])
-            elif x[0]=="W":
-                위치[1]-=int(x[2])
-            elif x[0]=="S":
-                위치[0]+=int(x[2])
-    return 위치
+            if y=="#" and countx<=countx1:
+                countx1=countx
+                print("countx1=",countx1)
+            if y=="#" and countx>=countx2:
+                countx2=countx
+                print("countx2=",countx2)
+            countx+=1
+        county+=1
+    answer = [countx1,county1,countx2,county2]
+    return answer
 
-print(solution(["OOOOOOOOOOOOO","OOOOOOSOOOOOO","OOOOOOXXXOOOO","OOOOOOOOOOOOO"], ["E 2","S 1","W 1","N 9"]))
+a=input()
+
+print(solution(a))
