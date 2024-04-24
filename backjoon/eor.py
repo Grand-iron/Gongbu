@@ -1,30 +1,32 @@
-def solution(wallpaper):
-    countx1=99
-    county1=99
-    countx2=-1
-    county2=-1
-    county=0
-    countx=0
-    for x in wallpaper: 
-        countx=0
-        if "#" in x and county1==99:
-            county1=county
-            print("county1=",county1)
-        if "#" in x and county>=county2:
-            county2=county
-            print("county2=",county2)
-        for y in x:
-            if y=="#" and countx<=countx1:
-                countx1=countx
-                print("countx1=",countx1)
-            if y=="#" and countx>=countx2:
-                countx2=countx
-                print("countx2=",countx2)
-            countx+=1
-        county+=1
-    answer = [countx1,county1,countx2,county2]
+def solution(friends, gifts):
+    answer = 0
+    #총 내가 받은 개수와 준 개수를 구해야함 이걸 이용해서 선물지수를 구할 수 있다.
+    #내가 누구를 줬는지를 알아야함 누구를 줬다면? 걔가 그사람한테 얼마나줬는지를 비교하고 이게 같으면 선물지수 비교
+    #                         안줬다면? 걔가 그사람한테 주었는지에 따라 비교
+    
+    #a b c [0,0,0]
+    #[3,1,2,0] a
+    #[1,1,0,0] b
+    #[2,0,2,0] c
+    
+    # 
+    # a b=1발견 > b a=1발견 > 선물지수 같음 즉 노 교환  
+    
+    #갯수 저장기 
+    a=[[] for x in range(len(friends))]
+    for x in range(len(friends)):
+        for y in range(len(friends)+1):   
+            a[x].append(0)
+    
+    #카운팅
+    for x in gifts:
+        print(x)
+        x.split()
+        a[friends.index(x[0])][friends.index(x[1])]+=1
+    print(a)
     return answer
 
-a=input()
-
-print(solution(a))
+gifts= ["a b", "b a", "c a", "a c", "a c", "c a"]
+friends= ["a", "b", "c"]
+gifts[0].split()
+print(gifts[0].split())
