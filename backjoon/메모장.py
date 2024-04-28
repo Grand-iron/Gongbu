@@ -1,3 +1,2 @@
-a=[1,2,1,2]
-
-print(a.index(1))
+for x in range(2,2):
+    print(4)
