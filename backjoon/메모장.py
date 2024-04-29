@@ -1,2 +1,4 @@
-for x in range(2,2):
-    print(4)
+a=[1,2,3]
+
+
+print(a.pop())
