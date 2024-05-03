@@ -1,3 +1,3 @@
-a=[[1,2]]
+a=[]
 
-print(a.pop()[0 ])
+print(sum(a))
