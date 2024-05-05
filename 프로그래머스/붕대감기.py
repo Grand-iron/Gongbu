@@ -14,12 +14,12 @@ def solution(bandage, health, attacks):
             if health <max_hp :
                 health+=bandage[1]
                 count+=1
-                if count%bandage[0]==0:
+                if count % bandage[0]==0: 
                     health+=bandage[2]
-                    count=0
+                    count=0 
         if health > max_hp:
             health=max_hp
             
         if health<=0:
             return -1
-    return health
+    return health   
