@@ -1,3 +1,4 @@
-a=[]
+a="12345"
 
-print(sum(a))
+for x in a[2:5]:
+    print(x)
