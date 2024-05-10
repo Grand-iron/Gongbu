@@ -1,4 +1,3 @@
-a="12345"
+a=[1,2,3,4,4]
 
-for x in a[2:5]:
-    print(x)
+print(a.count(4))
