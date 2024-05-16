@@ -1,4 +1,5 @@
-a="2"
-b="20"
+a=[1,2,3]
 
-print(a+"1"<b)
+new_past = a + [3] 
+
+print(new_past)
