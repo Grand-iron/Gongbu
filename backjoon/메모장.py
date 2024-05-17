@@ -1,5 +1,5 @@
-a=[1,2,3]
+from collections import deque
 
-new_past = a + [3] 
+a=deque([[1,2,3]])
 
-print(new_past)
+print(a.popleft())
