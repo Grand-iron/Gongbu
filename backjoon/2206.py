@@ -18,7 +18,7 @@ def check(x,y,가능성,maze):
                 if (maze[new_x][new_y] == '1' and 가능성==1) or 가능성==0:
                     가능경로.append([new_x,new_y,0])
                     방문기록.add((new_x,new_y,0))
-                elif 가능성==0:
+                else:
                     가능경로.append([new_x,new_y,1])
                     방문기록.add((new_x,new_y,1))
     return 가능경로

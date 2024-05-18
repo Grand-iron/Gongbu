@@ -1,5 +1,4 @@
-from collections import deque
+a=[]
 
-a=deque([[1,2,3]])
-
-print(a.popleft())
+for x in a:
+    print(x)
