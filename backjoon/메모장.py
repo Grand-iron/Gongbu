@@ -1,4 +1,7 @@
-a=[]
+def a(x):
+    if x<5:
+        a(x+1)
+        return x
 
-for x in a:
-    print(x)
+
+print(max(1))
