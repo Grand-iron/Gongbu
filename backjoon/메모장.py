@@ -1,7 +1,5 @@
-def a(x):
-    if x<5:
-        a(x+1)
-        return x
+c_list=set("a")
 
+c_list.add("c")
 
-print(max(1))
+print(c_list)
