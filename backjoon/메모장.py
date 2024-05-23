@@ -1,4 +1,8 @@
-a=[[1,2,3],[3,4]]
+a=set([])
 
-if a in 3:
-    print("@")
+a.add(2)
+a.add(23)
+a.add(4)
+a.add(5)
+
+print(a)
