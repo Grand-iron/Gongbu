@@ -1,5 +1,4 @@
-c_list=set("a")
+a=[[1,2,3],[3,4]]
 
-c_list.add("c")
-
-print(c_list)
+if a in 3:
+    print("@")
