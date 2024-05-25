@@ -9,7 +9,7 @@ columns_needed = ['건물명', '계약일', '물건금액(만원)', '권리구�
 input_year = input("조회할 년도를 입력하세요 (예: 2023): ")
 
 # 파일 경로 설정
-file_path = f'C:/Users/young/OneDrive/바탕 화면/코드공간/Python-languge/gogo/아카이브/서울시 부동산 실거래가 정보_{input_year}.csv'
+file_path = f'{input_year}.csv'
 
 # matplotlib의 폰트 설정을 변경하여 한글이 깨지지 않도록 함
 plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows 운영체제

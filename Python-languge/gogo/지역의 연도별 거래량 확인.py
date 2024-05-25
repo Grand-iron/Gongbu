@@ -8,7 +8,8 @@ columns_needed = ['건물명', '계약일', '물건금액(만원)', '권리구�
 df_all_years = pd.DataFrame()
 for year in range(2015, 2025):
     df_temp = pd.read_csv(
-        f'C:/Users/young/OneDrive/바탕 화면/코드공간/Python-languge/gogo/아카이브/서울시 부동산 실거래가 정보_{year}.csv',
+        #파일 경로 수정 필수
+        f'{year}.csv',
         usecols=columns_needed,
         encoding='cp949'
     )
