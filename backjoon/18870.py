@@ -1,6 +1,6 @@
 def check(a, x):
     low = 0
-    high = len(arr) - 1
+    high = len(a) - 1
     mid = 0
 
     while low <= high:
