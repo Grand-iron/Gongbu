@@ -22,8 +22,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import roc_auc_score, make_scorer
-from imblearn.over_sampling import SMOTE
-from imblearn.pipeline import Pipeline as ImbPipeline
 from sklearn.feature_selection import SelectFromModel
 
 train_df = pd.read_csv("/home/ubuntu/try/file/preprocessed_train.csv")
