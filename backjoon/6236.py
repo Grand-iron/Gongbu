@@ -12,14 +12,16 @@ while left<=right:
     total=0
     count=1
     for x in L:
-        total+=x
-        if total>mid:
-            total=0
-            count+=1
+        if total + x > mid:
+            total = x  # 새로운 그룹 시작
+            count += 1
+        else:
+            total += x  # 현재 그룹에 x 추가
     
     if count>int(m):
         left=mid+1
     else:
         right=mid-1
+        answer=mid
 
-print(mid)
+print(answer)
