@@ -1,4 +1,3 @@
-a=[1,2,5,3,4]
+a=600
 
-a.sort()
-print(a)
+print(a//6)
